@@ -1,4 +1,4 @@
-# answer
+# Peojrct 0
 
 ## First
 
@@ -42,15 +42,13 @@
 
 ## Second
 
-1. Current running: 0xc000e000 {tid = 1, status = THREAD_RUNNING, name = "main"}
-    others: 0xc0104000 {tid = 2, status = THREAD_BLOCKED, name = "idle", '\000' <repeats 11 times>, stack
-= 0xc0104f14 "", priority = 0, allelem = {prev = 0xc000e020, next = 0xc0039da0 <all_list+8>}, elem = {prev = 0xc0039d88 <fifo_ready_list>, next = 0xc0039d90 <fifo_ready_list+8>}, pcb = 0x0, magic = 3446325067}
+1. **Current** : 0xc010b000 {tid = 3, status = THREAD_RUNNING, name = "do-nothing\000\000\000\000\000"}
+    **Others**:
+           
 
 2. Backtrace: 
-    #0  run_task (argv=0xc0039c8c <argv+12>) at../../threads/init.c:310
-    #1  0xc0020b57 in run_actions (argv=0xc0039c8c <argv+12>) at ../../threads/init.c:388
-    #2  0xc00203d9 in main () at ../../threads/init.c:136
-
+    #0  0xc002242b in intr0e_stub ()
+    #1  0x00000005 in ?? ()
 
 
 
